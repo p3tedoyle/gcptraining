@@ -5,8 +5,7 @@ systemctl enable httpd
 service httpd start
 wget https://prdownloads.sourceforge.net/webadmin/webmin-1.881-1.noarch.rpm
 rpm -U webmin-1.881-1.noarch.rpm
-/usr/libexec/webmin/changepass.pl /etc/webmin root 
-password123
+/usr/libexec/webmin/changepass.pl /etc/webmin root password123
 systemctl enable webmin
 service webmin start
 yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm yum-utils -y
